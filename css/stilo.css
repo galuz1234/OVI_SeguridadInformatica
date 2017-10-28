@@ -1,60 +1,65 @@
-body{
-	margin: 0;
-	padding: 0;
-}
-
-#wrapper{
+#inicio	{
+	width: 1200px;
+	height: 1000px;
+	border: 2px solid #000;
 	border-radius: 5px;
-	background-color: ac33ff;
-	height: 600px;
-	margin: 0 auto;
-	width: 900px;
+	margin: auto;
+
 
 }
 
-#objetivog{
-
+header	{
+	width: 800px;
+	height: 160px;
+	border: 2px solid #000;
 	border-radius: 5px;
-	background-color: 3364ff;
-	box-shadow: 0 0 20px rgba (0,0,0,0.5);
-	padding: 30px;
-	margin-left: 50px;
-	margin-top: 30px;
-	width: 100px;
+	margin-left: auto;
+	line-height: 50px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+#logo	{
+	width: 246px;
+	height: 152px;
 	float: left;
+	margin-right: auto;
 }
 
-#objetivo1{
+#titulo {
+	margin-left: 10px;
+}
 
-	border-radius: 5px;
-	background-color: 3364ff;
-	box-shadow: 0 0 20px rgba (0,0,0,0.5);
-	padding: 30px;
-	margin-left: 50px;
-	margin-top: 30px;
-	width: 100px;
+.link {
+	width: 1190px;
+	height: 50px;
+	border: 1px solid #CCC;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px; 
+}
+
+.link ul {}
+
+.link ul li {
+	list-style: none;
 	float: left;
+
 }
 
-#objetivo2{
+.link ul li a {
+	text-decoration: none;
+	padding: 10px 30px;
+	border: 1px solid #CCC;
 
-	border-radius: 5px;
-	background-color: 3364ff;
-	box-shadow: 0 0 20px rgba (0,0,0,0.5);
-	padding: 30px;
-	margin-left: 50px;
-	margin-top: 30px;
-	width: 100px;
-	float: left;
 }
-#objetivo3{
 
-	border-radius: 5px;
-	background-color: 3364ff;
-	box-shadow: 0 0 20px rgba (0,0,0,0.5);
-	padding: 30px;
-	margin-left: 50px;
-	margin-top: 30px;
-	width: 100px;
-	float: left;
+#presentacion {
+	margin-top: 70px; 
+	margin-left: 5px;
+	background-color: #CCC;
+	width: 600px;
+	height: 170px;
+	
 }
+
