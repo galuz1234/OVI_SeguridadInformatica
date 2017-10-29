@@ -1,18 +1,23 @@
 #inicio	{
-	width: 1200px;
+	width: 960px;
 	height: 1000px;
 	border: 2px solid #000;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin: auto;
+	background-color: E6E6E8;
 
+}
+
+body {
+	font-family: Arial;
 
 }
 
 header	{
-	width: 800px;
+	width: 650px;
 	height: 160px;
 	border: 2px solid #000;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-left: auto;
 	line-height: 50px;
 	margin-top: 15px;
@@ -24,6 +29,12 @@ header	{
 	height: 152px;
 	float: left;
 	margin-right: auto;
+
+}
+
+#logo figure img  {
+	border-radius: 10px;
+	margin-top: 5px;
 }
 
 #titulo {
@@ -31,12 +42,14 @@ header	{
 }
 
 .link {
-	width: 1190px;
+	width: 950px;
 	height: 50px;
 	border: 1px solid #CCC;
 	float: right;
 	margin-right: 5px;
 	margin-top: 10px; 
+	border-radius: 10px;
+	background-color: 3342ff;
 }
 
 .link ul {}
@@ -51,15 +64,74 @@ header	{
 	text-decoration: none;
 	padding: 10px 30px;
 	border: 1px solid #CCC;
-
+	border-radius: 5px;
+	background-color: #F9F9F9;
+	font-weight: bold;
+	padding: 5px 50px;
 }
 
-#presentacion {
-	margin-top: 70px; 
-	margin-left: 5px;
+nav a:hover {
+	background: #CCCCCC;
+	color: #000000;
+}
+
+#presentacion article{
+	margin-top: 10px; 
 	background-color: #CCC;
-	width: 600px;
-	height: 170px;
+	width: 500px;
+	float: left;
+	border-radius: 10px;
+	height: 200px;
+	margin-left: 5px;
+	}
+
+#presentacion p {
+	margin-left: 5px;
 	
 }
 
+#presentacion img {
+	margin-top: 10px; 
+	float: right;
+	width: 450px;
+	border-radius: 10px;
+	height: 200px;
+	margin-right: 5px;
+}
+
+#temas {
+	width: 950px;
+	height: auto; overflow: hidden;
+	border: 1px solid;
+	border-radius: 10px;
+	margin-left: 5px;
+
+}
+
+.elementos {
+	width: 237px;
+	height: 400px;
+	border: 1px solid;
+	float: left;
+}
+
+.seguridadfisica{
+	width: 237px;
+	height: 400px;
+	border: 1px solid;
+	float: left;
+}
+
+.tiposdeamenaza {
+	width: 237px;
+	height: 400px;
+	border: 1px solid;
+	float: left;
+}
+
+.protocolos {
+	width: 231px;
+	height: 400px;
+	border: 1px solid;
+	float: right;
+}
