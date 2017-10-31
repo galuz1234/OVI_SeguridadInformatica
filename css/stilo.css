@@ -1,6 +1,6 @@
 #inicio	{
 	width: 960px;
-	height: 1000px;
+	height: 1214px;
 	border: 2px solid #000;
 	border-radius: 10px;
 	margin: auto;
@@ -136,5 +136,12 @@ nav a:hover {
 	float: right;
 }
 
-
+footer {
+	height: 350px;
+	margin-top: 10px;
+	background: #000000;
+	color: #FFFFFF;
+	border-radius: 6px;
+	
+}
 
