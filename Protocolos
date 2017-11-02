@@ -1,0 +1,118 @@
+PROTOCOLOS Y NORMAS DE SEGURIDAD INFORMATICA 
+
+Un protocolo de seguridad define las reglas que gobiernan estas comunicaciones, diseñadas para que el sistema pueda soportar ataques de carácter malicioso. Protegerse contra todos los ataques posibles es generalmente muy costoso, por lo cual los protocolos son diseñados bajo ciertas premisas con respecto a los riesgos a los cuales el sistema está expuesto.
+Servicios de seguridad:
+– Manejo de claves
+(negociación y almacenamiento de claves)
+– Confidencialidad / Privacidad
+– No repudio
+– Integridad
+– Autenticación
+– Autorización
+• SSH es un protocolo de nivel de aplicación para crear conexiones
+seguras entre dos sistemas sobre redes no seguras (SSH2)
+• Alternativa a programas de acceso remoto no seguros, como telnet,
+ftp, rlogin, rsh y rcp (slogin, ssh y scp)
+• Proporciona terminal de sesión cifrada con autenticación fuerte del
+servidor y el cliente, usando criptografía de clave pública
+• Incluye características como:
+– una variedad de mecanismos de autenticación de usuarios
+– conexiones TCP arbitrarias de tunneling a través de la sesión SSH,
+protegiendo protocolos inseguros como IMAP y permitiendo el paso
+seguro a través de cortafuegos
+– reenvío automático de conexiones X windows
+– soporte para métodos de autenticación externa, inluyendo Kerberos
+– transferencias seguras de ficheros
+• SSH está basado en protocolos documentados por el IETF
+• El protocolo SSL fue desarrollado por Netscape en 1994 y puesto en dominio público para la definición de canales seguros sobre TCP. Su objetivo es la realización de conexiones seguras a los servidores independientemente del SO de los extremos del canal.
+• Está compuesto por dos capas:
+– La primera capa (SSL Record Protocol), encapsula los protocolos de nivel más alto y construye el canal de comunicaciones seguro
+– La segunda capa está formada por tres protocolos:
+SSL. Servicios de Seguridad
+• Confidencialidad 
+– Cifrado y descifrado
+• Autenticación 
+– Autenticación basada en certificado
+– Criptosistema de clave pública
+• No repudio 
+– Certificado
+– Firma digital
+• Integridad 
+– Message Authentication Code (MAC)
+Significados
+• Otros tipos de protección que proporciona SSH:
+
+– Después de la conexión inicial, el cliente puede verificar que se está
+conectando al mismo servidor durante sesiones posteriores
+– El cliente puede transmitir su información de autentificación al servidor,
+como el nombre de usuario y la contraseña, en formato cifrado
+– El cliente tiene la posibilidad de usar X11 en aplicaciones lanzadas desde
+el indicador de comandos de la shell. Esta técnica proporciona una
+interfaz gráfica segura (llamada reenvío por X11)
+– Si el servidor usa la técnica del reenvío de puerto, los protocolos
+considerados como inseguros (POP, IMAP...), se pueden cifrar para
+garantizar una comunicación segura
+• Versiones gratuitas y comerciales (*):
+– proyecto openSSH
+Ö http://www.openssh.org (OpenSSH v3.8 Febrero 2004)
+– (*) http://www.ssh.com
+• Secuencia de eventos de una conexión SSH:
+
+1. Se crea una capa de transporte segura para que el cliente sepa que está
+efectivamente comunicando con el servidor correcto. Luego se cifra la
+comunicación entre el cliente y el servidor por medio de un código
+simétrico
+
+2. Con la conexión segura al servidor en su lugar, el cliente se autentifica
+ante el servidor sin preocuparse de que la información de autentificación
+pudiese exponerse a peligro. OpenSSH usa claves DSA o RSA y la
+versión 2.0 del protocolo SSH para autenticaciones predeterminadas
+
+3. Con el cliente autentificado ante el servidor, se pueden usar varios
+servicios diferentes con seguridad a través de la conexión, como una
+sesión shell interactiva, aplicaciones X11 y túneles TCP/IP
+• El reenvío por TCP/IP trabaja con el cliente SSH y pide que un determinado
+puerto en el lado del cliente o del servidor sea asignado a la conexión SSH
+existente.
+• Para asignar un puerto local del cliente a un puerto remoto del servidor, primero
+hay que saber los números de puerto de ambas máquinas. Es posible asignar
+dos puertos no estándar, diferentes el uno del otro.
+ssh -L <puerto-local>:<maquina-remota>:<puerto-remoto> <nombre-usuario>
+@<maquina>
+• P.e., para controlar su correo electrónico en un servidor llamado
+correo.dominio.com usando POP y SMTP, y SSH está a disposición en ese
+servidor, el reenvío por TCP/IP se configura con:
+ssh -L 1100:correo.dominio.com:110 1025:correo.dominio.com:25
+usuario@correo.dominio.com
+• El reenvío por puertos es especialmente útil si se tiene un cortafuegos. Si el
+cortafuegos está configurado para permitir el tráfico SSH a través de su puerto
+estándar (22) pero bloquea el acceso a través de otros puertos, sigue siendo
+posible una conexión entre dos hosts que usen los puertos bloqueados
+desviando su comunicación a través de una conexión SSH establecida entre
+ellos
+SSH Reenvío de Puertos
+• Su funcionamiento es el siguiente:
+
+– El cliente al hacer la conexión informa sobre los sistemas criptográficos
+que tiene disponibles, y el servidor responde con un identificador de la
+conexión, su clave certificada e información sobre los sistemas criptográficos que soporta
+
+– El cliente deberá elegir un sistema criptográfico, verificará la clave pública
+del servidor. Entonces se genera una clave cifrada con la clave del servidor
+
+– Este es uno de los puntos importantes del protocolo SSL, porque si
+alguien pudiese descifrar la información, sólo conseguiría romper esa
+conexión, y una conexión posterior requeriría una clave criptográfica
+diferente
+
+– Una vez finalizado este proceso, los protocolos toman el control de nivel
+de aplicación, de modo que SSL nos asegura que:
+• los mensajes que enviamos o recibimos no han sido modificados
+• ninguna persona sin autorización puede leer la información transmitida
+• efectivamente recibe la información quien debe recibirla
+• Genera los parámetros criptográficos del estado de la sesión
+• Opera sobre el SSL Record Layer Protocol
+• Tiene dos mecanismos de negociación de sesión:
+– Full Handshake (1ª conexión)
+– Abbreviated Handshake (conexiones posteriores)
+SSL Handshake Protocol
