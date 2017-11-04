@@ -1,3 +1,34 @@
-Como usuarios es importante reconocer cuales son las amenazas, vulnerabilidades y controles que se pueden presentar a nivel de Hardware y Software con el fin de no caer en errores que pueden poner en peligro nuestros datos, claves, información confidencial y toda aquella información que es confidencial y que puede ser utilizada en fines no beneficiosos.
+Objetivo de la sección
+Reconocer las Amenazas, Vulnerabilidades y Controles que se pueden presentar a nivel de Hardware y de Software.
+Texto de Introducción: Como usuarios es importante reconocer cuales son las amenazas, vulnerabilidades y controles que se pueden presentar a nivel de Hardware y Software con el fin de no caer en errores que pueden poner en peligro nuestros datos, claves, información confidencial y toda aquella información que es confidencial y que puede ser utilizada en fines no beneficiosos.
 A continuación, se presentará un video explicativo de la Seguridad Física y Lógica el cual aclarara muchos de los interrogantes que diariamente nos hacemos  como usuarios.
-
+Video a Insertar.
+https://www.youtube.com/watch?v=2gIj3hAxUGc&t=10s
+https://www.youtube.com/watch?v=XhWev-1szy8
+Seguridad Física
+La Seguridad Física consiste en la "aplicación de barreras físicas y procedimientos de control, como medidas de prevención y contramedidas ante amenazas a los recursos e información confidencial. Se refiere a los controles y mecanismos de seguridad dentro y alrededor del equipo de Cómputo así como los medios de acceso remoto al y desde el mismo; implementados para proteger el hardware y medios de almacenamiento de datos.
+Tipos de Desastres
+Este tipo de seguridad está enfocado a cubrir las amenazas ocasionadas tanto por el hombre como por la naturaleza del medio físico en que se encuentra ubicado el centro.
+Las principales amenazas que se prevén en la seguridad física son:
+Desastres naturales, incendios accidentales tormentas e inundaciones.
+Amenazas ocasionadas por el hombre.
+Disturbios, sabotajes internos y externos deliberados.
+A continuación se analizan los peligros más importantes que se corren en un centro de procesamiento; con el objetivo de mantener una serie de acciones a seguir en forma eficaz y oportuna para la prevención, reducción, recuperación y corrección de los diferentes tipos de riesgos.
+Incendios 
+Inundaciones:Esta es una de las causas de mayores desastres en centros de cómputos.
+Además de las causas naturales de inundaciones, puede existir la posibilidad de una inundación provocada por la necesidad de apagar un incendio en un piso superior.
+Para evitar este inconveniente se pueden tomar las siguientes medidas: construir un techo impermeable para evitar el paso de agua desde un nivel superior y acondicionar las puertas para contener el agua que bajase por las escaleras.
+Condiciones Climatológicas 
+Señales de Radar
+Instalaciones Eléctricas 
+Ergometría 
+Acciones Hostiles
+Robo:La información importante o confidencial puede ser fácilmente copiada. Muchas empresas invierten millones de dólares en programas y archivos de información, a los que dan menor protección que la que otorgan a una máquina de escribir o una calculadora. 
+El software, es una propiedad muy fácilmente sustraíble y las cintas y discos son fácilmente copiados sin dejar ningún rastro
+Fraude:Cada año, millones de dólares son sustraídos de empresas y, en muchas ocasiones, las computadoras han sido utilizadas como instrumento para dichos fines.
+Sabotaje:El peligro más temido en los centros de procesamiento de datos, es el sabotaje. Empresas que han intentado implementar programas de seguridad de alto nivel, han encontrado que la protección contra el saboteador es uno de los retos más duros. Este puede ser un empleado o un sujeto ajeno a la propia empresa.
+Físicamente, los imanes son las herramientas a las que se recurre, ya que con una ligera pasada la información desaparece, aunque las cintas estén almacenadas en el interior de su funda de protección. Una habitación llena de cintas puede ser destruida en pocos minutos y los centros de procesamiento de datos pueden ser destruidos sin entrar en ellos. 
+Además, suciedad, partículas de metal o gasolina pueden ser introducidos por los conductos de aire acondicionado. Las líneas de comunicaciones y eléctricas pueden ser cortadas, etc.
+Control de Accesos:El control de acceso no sólo requiere la capacidad de identificación, permitir o negar acceso basado en restricciones de tiempo.
+Seguridad Lógica
+La Seguridad Lógica consiste en la "aplicación de barreras y procedimientos que resguarden el acceso a los datos y sólo se permita acceder a ellos a las personas autorizadas para hacerlo."
