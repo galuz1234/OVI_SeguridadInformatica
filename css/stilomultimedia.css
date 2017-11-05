@@ -1,0 +1,10 @@
+section img {
+	float: right;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+aside {
+	float: left;
+	border-radius: 10px;
+}
