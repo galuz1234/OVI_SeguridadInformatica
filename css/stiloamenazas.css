@@ -1,0 +1,17 @@
+aside {
+	float: right;
+	margin-right: 20px;
+	
+}
+
+img {
+	border-radius: 10px;
+}
+
+#video1 {
+	float: right;
+}
+
+#video2 {
+	float: left;
+}
