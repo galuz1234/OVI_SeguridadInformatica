@@ -39,6 +39,7 @@ header	{
 
 #titulo {
 	margin-left: 10px;
+	color: #004669;
 }
 
 .link {
@@ -49,7 +50,7 @@ header	{
 	margin-right: 5px;
 	margin-top: 10px; 
 	border-radius: 10px;
-	background-color: 3342ff;
+	background-color: #004669;
 }
 
 .link ul {}
@@ -63,40 +64,52 @@ header	{
 .link ul li a {
 	text-decoration: none;
 	padding: 10px 30px;
-	border: 1px solid #CCC;
 	border-radius: 5px;
-	background-color: #F9F9F9;
+	background-color: #004669;
 	font-weight: bold;
 	padding: 5px 50px;
+	color: #FFFFFF
 }
 
-nav a:hover {
+nav a: hover {
 	background: #CCCCCC;
 	color: #000000;
+
 }
 
 #presentacion article{
 	margin-top: 10px; 
-	background-color: #CCC;
-	width: 500px;
+	background-color: #C0C0C0;
+	width: 400px;
 	float: left;
 	border-radius: 10px;
-	height: 200px;
-	margin-left: 5px;
+	height: 270px;
+	margin-left: 10px;
 	}
 
 #presentacion p {
-	margin-left: 5px;
-	
+	margin-left: 10px;
+	margin-top: 30px;
+	color: #666;
+	text-align: justify;
+	margin-right: 10px;
 }
 
-#presentacion img {
-	margin-top: 10px; 
-	float: right;
-	width: 450px;
-	border-radius: 10px;
-	height: 200px;
-	margin-right: 5px;
+#presentacion a{
+	margin-left: 120px;
+}
+
+aside a img {
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+aside img {
+	margin-top: 20px;
+}
+
+.twitter-timeline {
+	float: left;
 }
 
 #temas {
@@ -108,12 +121,31 @@ nav a:hover {
 
 }
 
+
+.seguridadfisica h4  {
+	text-align: center;
+}
+
+.tiposdeamenaza h4  {
+	text-align: center;
+}
+
+.protocolos h4  {
+	text-align: center;
+}
+
 .elementos {
 	width: 237px;
 	height: 400px;
 	border: 1px solid;
 	float: left;
 }
+
+ .elementos h4  {
+	text-align: center;
+}
+
+
 
 .seguridadfisica{
 	width: 237px;
@@ -136,17 +168,81 @@ nav a:hover {
 	float: right;
 }
 
+.elementos img {
+	margin-left: 10px;
+}
+
+.seguridadfisica img {
+	margin-left: 10px;
+}
+
+.tiposdeamenaza img {
+	margin-left: 10px;
+}
+
+.protocolos img {
+	margin-left: 5px;
+}
+
+.elementos p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #666; 
+}
+
+.seguridadfisica p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #666; 
+}
+
+.tiposdeamenaza p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #666; 
+}
+
+.protocolos p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #666; 
+}
+
+.elementos a {
+	color: #004669;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 13px;
+}
+
+.seguridadfisica a {
+	color: #004669;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 13px;
+}
+
+.tiposdeamenaza a {
+	color: #004669;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 13px;
+}
+
+.protocolos a {
+	color: #004669;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 13px;
+}
+
+
 footer {
 	height: 350px;
 	margin-top: 10px;
 	background: #000000;
 	color: #FFFFFF;
 	border-radius: 6px;
-	
-}
-
-#class img {
-	content: center;
 	
 }
 
